@@ -15,10 +15,11 @@ namespace MajasDarbs3
 
         public void Call() 
         {
+            Console.WriteLine($"{Model} is calling");
         }
         public void SendSMS()
         {
-           
+            Console.WriteLine($"{Model} is sending SMS");
         }
     }
 }
