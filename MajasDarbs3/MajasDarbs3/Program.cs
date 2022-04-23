@@ -55,3 +55,33 @@ auto.MakeSound();
 Console.WriteLine();
 Console.WriteLine("------------------");
 Console.WriteLine();
+
+Console.WriteLine("3.uzdevums PRECE");
+
+Product box = new Product();
+
+box.Weight = "20 kg";
+box.Size = "izmērs M";
+
+
+Console.WriteLine("Lūdzu ievadi izgatavojamās kastes garumu!");
+
+string ievaditaisGarums = Console.ReadLine();
+int A = int.Parse(ievaditaisGarums);
+
+Console.WriteLine("Lūdzu ievadi izgatavojamās kastes platumu!");
+
+string ievaditaisPlatums = Console.ReadLine();
+int B = int.Parse(ievaditaisPlatums);
+
+Console.WriteLine("Lūdzu ievadi izgatavojamās kastes augstumu!");
+
+string ievaditaisAugstums = Console.ReadLine();
+int C = int.Parse(ievaditaisAugstums);
+
+Console.WriteLine($"Preces pasūtītājs ievadīja garumu {A}, platumu {B} un augstumu {C}");
+
+box.Creation();
+box.Demonstration();
+
+Console.WriteLine("Paldies par pasūtījumu!");
