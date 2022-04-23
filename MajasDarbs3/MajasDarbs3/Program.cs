@@ -31,3 +31,27 @@ Console.WriteLine();
 
 Console.WriteLine("2.uzdevums MAŠĪNA");
 
+Car auto = new Car();
+
+auto.Mark = "SAAB";
+auto.LicensePlate = "AB1234";
+auto.Speed = 120;
+Console.WriteLine("Lūdzu ievadi sava auto marku, nummurzīmi un ātrumu");
+
+string mark = auto.Mark;
+string plate = auto.LicensePlate;
+int speed = auto.Speed;
+
+Console.WriteLine($"Lietotājs ievadīja marku {mark}, nummurzīmi {plate} un maksimālo ātrumu {speed}");
+
+Console.WriteLine($"Parādi, ko Tavs auto prot!");
+
+auto.Drive();
+auto.SpeedUp();
+auto.Stop();
+auto.MakeSound();
+
+
+Console.WriteLine();
+Console.WriteLine("------------------");
+Console.WriteLine();
