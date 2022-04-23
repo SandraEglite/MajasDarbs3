@@ -89,7 +89,6 @@ if (A + B + C <= 100)
 Console.WriteLine($"Ievadītie parameti atbilst izmēram {izmers}");
 
 
-
 box.Creation();
 box.Demonstration();
 
