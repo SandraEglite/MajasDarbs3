@@ -12,7 +12,8 @@ namespace MajasDarbs3
      
         public string Weight { get; set; }
 
-        public void Creation()
+      
+    public void Creation()
         {
             Console.WriteLine("Izveidojam jūsu pasūtījumu!");
         }
