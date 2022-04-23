@@ -82,7 +82,7 @@ Console.WriteLine($"Preces pasūtītājs ievadīja garumu {A}, platumu {B} un au
 
 string izmers = "Izmērs S";
 
-if (A + B + C <= 100) 
+if (A + B + C >= 100) 
 { izmers = "Izmērs M"; }
 
 
@@ -93,3 +93,11 @@ box.Creation();
 box.Demonstration();
 
 Console.WriteLine("Paldies par pasūtījumu!");
+
+Console.WriteLine();
+Console.WriteLine("------------------");
+Console.WriteLine();
+
+Console.WriteLine("4.uzdevums PERSONA");
+
+
