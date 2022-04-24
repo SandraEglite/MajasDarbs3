@@ -8,30 +8,46 @@ namespace MajasDarbs3
 {
     public class Person
     {
-        private string first;
-        private string last;
-
-        public Person(string firstName, string lastName) 
-        { 
-        first = firstName;
-        last = lastName;
-        }
+       public string Name { get; set; } 
+       public string Surname { get; set; } 
         
+             
         public string Hobby { get; set; }
 
-        public int DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
-        public bool IsFemale { get; set; }
+        public string Sex { get; set; }
 
+       
+        public Person(string firstName, string lastName, string Hobby, string Sex, string ievaditaisDatums)
+        {
+            Name = firstName;
+            Surname = lastName;
+            
+                     
+            DateOfBirth = DateTime.Parse(ievaditaisDatums);
+            Console.WriteLine(DateOfBirth.ToString("d"));
+
+            
+
+       
+           
+
+            
+            
+        }
         
-     public void Greeting() 
+        public void Greeting() 
         {
         
         }
 
-     public void Age() 
-        { 
-        
+     public int Age() 
+        {
+            DateTime sodienasDatums = DateTime.Now;
+            int vecums = (DateTime.Now - DateOfBirth);
+            
+            return vecums; 
         }
     }
 

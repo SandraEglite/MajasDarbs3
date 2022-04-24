@@ -1,97 +1,123 @@
 ﻿
 
 using MajasDarbs3;
-Phone telefons = new Phone();
+//Phone telefons = new Phone();
 
 
-telefons.Model = "Lielupe";
-telefons.Mark = 111;
-telefons.Size = 12;
+//telefons.Model = "Lielupe";
+//telefons.Mark = 111;
+//telefons.Size = 12;
 
-string telefonsModel = telefons.Model;
-int telefonsMark = telefons.Mark;   
-int telefonsSize = telefons.Size;
+//string telefonsModel = telefons.Model;
+//int telefonsMark = telefons.Mark;
+//int telefonsSize = telefons.Size;
 
-Console.WriteLine("1.uzdevums TELEFONS");
-
-
-Console.WriteLine("Lūdzu ievadi sava telefona modeli");
-
-Console.WriteLine($"Lietotājs ievadīja modeli {telefonsModel}, marku {telefonsMark} un izmēru {telefonsSize}");
-
-Console.WriteLine($"Parādi, ko tavs telefons {telefonsModel} prot?");
-
-telefons.Call();
-telefons.SendSMS();
+//Console.WriteLine("1.uzdevums TELEFONS");
 
 
-Console.WriteLine();
-Console.WriteLine("------------------");
-Console.WriteLine();
+//Console.WriteLine("Lūdzu ievadi sava telefona modeli");
 
-Console.WriteLine("2.uzdevums MAŠĪNA");
+//Console.WriteLine($"Lietotājs ievadīja modeli {telefonsModel}, marku {telefonsMark} un izmēru {telefonsSize}");
 
-Car auto = new Car();
+//Console.WriteLine($"Parādi, ko tavs telefons {telefonsModel} prot?");
 
-auto.Mark = "SAAB";
-auto.LicensePlate = "AB1234";
-auto.Speed = 120;
-Console.WriteLine("Lūdzu ievadi sava auto marku, nummurzīmi un ātrumu");
-
-string mark = auto.Mark;
-string plate = auto.LicensePlate;
-int speed = auto.Speed;
-
-Console.WriteLine($"Lietotājs ievadīja marku {mark}, nummurzīmi {plate} un maksimālo ātrumu {speed}");
-
-Console.WriteLine($"Parādi, ko Tavs auto prot!");
-
-auto.Drive();
-auto.SpeedUp();
-auto.Stop();
-auto.MakeSound();
+//telefons.Call();
+//telefons.SendSMS();
 
 
-Console.WriteLine();
-Console.WriteLine("------------------");
-Console.WriteLine();
+//Console.WriteLine();
+//Console.WriteLine("------------------");
+//Console.WriteLine();
 
-Console.WriteLine("3.uzdevums PRECE");
+//Console.WriteLine("2.uzdevums MAŠĪNA");
 
+//Car auto = new Car();
 
-Console.WriteLine("Lūdzu ievadi izgatavojamās kastes garumu!");
+//auto.Mark = "SAAB";
+//auto.LicensePlate = "AB1234";
+//auto.Speed = 120;
+//Console.WriteLine("Lūdzu ievadi sava auto marku, nummurzīmi un ātrumu");
 
-string ievaditaisGarums = Console.ReadLine();
-double A = double.Parse(ievaditaisGarums);
+//string mark = auto.Mark;
+//string plate = auto.LicensePlate;
+//int speed = auto.Speed;
 
-Console.WriteLine("Lūdzu ievadi izgatavojamās kastes platumu!");
+//Console.WriteLine($"Lietotājs ievadīja marku {mark}, nummurzīmi {plate} un maksimālo ātrumu {speed}");
 
-string ievaditaisPlatums = Console.ReadLine();
-double B = double.Parse(ievaditaisPlatums);
+//Console.WriteLine($"Parādi, ko Tavs auto prot!");
 
-Console.WriteLine("Lūdzu ievadi izgatavojamās kastes augstumu!");
-
-string ievaditaisAugstums = Console.ReadLine();
-double C = double.Parse(ievaditaisAugstums);
-
-Console.WriteLine($"Preces pasūtītājs ievadīja garumu {A}, platumu {B} un augstumu {C}");
-
-Product box = new Product(A, B, C);
-
-
-Console.WriteLine($"Ievadītie parameti atbilst izmēram {box.Size}");
+//auto.Drive();
+//auto.SpeedUp();
+//auto.Stop();
+//auto.MakeSound();
 
 
-box.Demonstration();
+//Console.WriteLine();
+//Console.WriteLine("------------------");
+//Console.WriteLine();
 
-Console.WriteLine("Paldies par pasūtījumu!");
+//Console.WriteLine("3.uzdevums PRECE");
 
-Console.WriteLine();
-Console.WriteLine("------------------");
-Console.WriteLine();
+
+//Console.WriteLine("Lūdzu ievadi izgatavojamās kastes garumu!");
+
+//string ievaditaisGarums = Console.ReadLine();
+//double A = double.Parse(ievaditaisGarums);
+
+//Console.WriteLine("Lūdzu ievadi izgatavojamās kastes platumu!");
+
+//string ievaditaisPlatums = Console.ReadLine();
+//double B = double.Parse(ievaditaisPlatums);
+
+//Console.WriteLine("Lūdzu ievadi izgatavojamās kastes augstumu!");
+
+//string ievaditaisAugstums = Console.ReadLine();
+//double C = double.Parse(ievaditaisAugstums);
+
+//Console.WriteLine($"Preces pasūtītājs ievadīja garumu {A}, platumu {B} un augstumu {C}");
+
+//Product box = new Product(A, B, C);
+
+
+//Console.WriteLine($"Ievadītie parameti atbilst izmēram {box.Size}");
+
+
+//box.Demonstration();
+
+//Console.WriteLine("Paldies par pasūtījumu!");
+
+//Console.WriteLine();
+//Console.WriteLine("------------------");
+//Console.WriteLine();
 
 Console.WriteLine("4.uzdevums PERSONA");
 
 
-Console.WriteLine("Lūdzu ievadi savu vārdu");
+Console.WriteLine("Lūdzu ievadi savu vārdu un uzvārdu");
+Console.WriteLine("Vārds:");
+
+string Name = Console.ReadLine();
+string firstName = Name;
+
+Console.WriteLine("Uzvārds:");
+
+string Surname = Console.ReadLine();
+string lastName = Surname;
+
+Console.WriteLine("Kāds ir Tavs hobijs?");
+string Hobby = Console.ReadLine();
+string ievaditaisHobijs = Hobby;
+
+Console.WriteLine("Ievadi savu dzimumu (V vai S):");
+string Sex = Console.ReadLine();
+string ievaditaisDzimums = Sex;
+
+
+Console.WriteLine("Kāds ir dzimšanas datums (DD/MM/YYYY)?");
+string DateOfBirth = Console.ReadLine();
+
+Console.WriteLine($"Tu ievadīji datumu: {DateOfBirth}");
+
+Person klients = new Person(Name, Surname, Hobby, Sex, DateOfBirth);
+
 
