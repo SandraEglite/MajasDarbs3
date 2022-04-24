@@ -113,11 +113,11 @@ string Sex = Console.ReadLine();
 string ievaditaisDzimums = Sex;
 
 
-Console.WriteLine("Kāds ir dzimšanas datums (DD/MM/YYYY)?");
+Console.WriteLine("Kāds ir dzimšanas datums (M/D/YYYY)?");
 string DateOfBirth = Console.ReadLine();
 
 Console.WriteLine($"Tu ievadīji datumu: {DateOfBirth}");
 
 Person klients = new Person(Name, Surname, Hobby, Sex, DateOfBirth);
 
-
+klients.Greeting();
