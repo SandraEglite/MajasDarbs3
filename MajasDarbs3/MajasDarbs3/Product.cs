@@ -12,10 +12,19 @@ namespace MajasDarbs3
      
         public string Weight { get; set; }
 
-      
+        
+        public Product(double A, double B, double C) 
+        {
+            Size = "Izmērs S";
+            if (A + B + C >= 100)
+            { Size = "Izmērs M"; }
+
+            Weight = "20kg";
+            Creation();
+        }
     public void Creation()
         {
-            Console.WriteLine("Izveidojam jūsu pasūtījumu!");
+            Console.WriteLine("Izveidojam pasūtījumu!");
         }
         public void Demonstration()
         {

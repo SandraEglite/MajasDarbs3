@@ -58,10 +58,6 @@ Console.WriteLine();
 
 Console.WriteLine("3.uzdevums PRECE");
 
-Product box = new Product();
-
-box.Weight = "20 kg";
-box.Size = "Size M";
 
 Console.WriteLine("Lūdzu ievadi izgatavojamās kastes garumu!");
 
@@ -80,16 +76,12 @@ double C = double.Parse(ievaditaisAugstums);
 
 Console.WriteLine($"Preces pasūtītājs ievadīja garumu {A}, platumu {B} un augstumu {C}");
 
-string izmers = "Izmērs S";
-
-if (A + B + C >= 100) 
-{ izmers = "Izmērs M"; }
+Product box = new Product(A, B, C);
 
 
-Console.WriteLine($"Ievadītie parameti atbilst izmēram {izmers}");
+Console.WriteLine($"Ievadītie parameti atbilst izmēram {box.Size}");
 
 
-box.Creation();
 box.Demonstration();
 
 Console.WriteLine("Paldies par pasūtījumu!");
@@ -100,4 +92,6 @@ Console.WriteLine();
 
 Console.WriteLine("4.uzdevums PERSONA");
 
+
+Console.WriteLine("Lūdzu ievadi savu vārdu");
 
