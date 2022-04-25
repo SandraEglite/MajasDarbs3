@@ -95,12 +95,10 @@ Console.WriteLine("4.uzdevums PERSONA");
 
 Console.WriteLine("Lūdzu ievadi savu vārdu un uzvārdu");
 Console.WriteLine("Vārds:");
-
 string Name = Console.ReadLine();
 string firstName = Name;
 
 Console.WriteLine("Uzvārds:");
-
 string Surname = Console.ReadLine();
 string lastName = Surname;
 
@@ -113,10 +111,10 @@ string Sex = Console.ReadLine();
 string ievaditaisDzimums = Sex;
 
 
-Console.WriteLine("Kāds ir dzimšanas datums (M/D/YYYY)?");
+Console.WriteLine("Kāds ir dzimšanas datums (MM/DD/YYYY)?");
 string DateOfBirth = Console.ReadLine();
 
-Console.WriteLine($"Tu ievadīji datumu: {DateOfBirth}");
+Console.WriteLine($"Tu ievadīji datumu: ");
 
 Person klients = new Person(Name, Surname, Hobby, Sex, DateOfBirth);
 

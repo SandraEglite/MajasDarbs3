@@ -20,38 +20,27 @@ namespace MajasDarbs3
 
         
 
-        public Person(string firstName, string lastName, string Hobby, string Sex, string ievaditaisDatums)
+        public Person(string firstName, string lastName, string ievaditaisHobijs, string Sex, string ievaditaisDatums)
         {
             Name = firstName;
             Surname = lastName;
+            Hobby = ievaditaisHobijs; 
                                  
             DateOfBirth = DateTime.Parse(ievaditaisDatums);
             Console.WriteLine(DateOfBirth.ToString("d"));                                     
         }
 
-     public static DateTime Age() 
+        public TimeSpan Age()
         {
-            //DateTime sodienasDatums = DateTime.Now;
-
-
-            DateTime ievaditaisDatums = new DateTime();
             DateTime sodienasDatums = DateTime.Now;
-
-            int age = sodienasDatums.Year - ievaditaisDatums.Year;
-
-            Console.WriteLine(age);
-
-            //TimeSpan vecums = DateTime.Now - DateOfBirth;
-            //return vecums;
-            //string[] standardFmts = { "d" };
-            //foreach (string standardFmt in standardFmts)
-            //Console.WriteLine("Vecums ir:",vecums.ToString("d"));
-
+            TimeSpan vecums = DateTime.Now - DateOfBirth;
+            return vecums;
+            
         }
 
         public void Greeting() 
         {
-          Console.WriteLine($"Sveiks, mani sauc {Name} {Surname} un man ir {Age()} gadi");
+          Console.WriteLine($"Sveiks, mani sauc {Name} {Surname}, mans hobijs ir {Hobby} un man ir {(Age().Days/365)} gadi");
         }
 
 
