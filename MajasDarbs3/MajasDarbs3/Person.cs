@@ -34,8 +34,7 @@ namespace MajasDarbs3
         {
             DateTime sodienasDatums = DateTime.Now;
             TimeSpan vecums = DateTime.Now - DateOfBirth;
-            return vecums;
-            
+            return vecums;            
         }
 
         public void Greeting() 
@@ -43,7 +42,6 @@ namespace MajasDarbs3
           Console.WriteLine($"Sveiks, mani sauc {Name} {Surname}, mans hobijs ir {Hobby} un man ir {(Age().Days/365)} gadi");
         }
 
-
-    }
+            }
 
 }
